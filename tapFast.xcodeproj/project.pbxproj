@@ -14,6 +14,9 @@
 		C713A10D21F7C712006DE862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C713A10B21F7C712006DE862 /* LaunchScreen.storyboard */; };
 		C713A11821F7C712006DE862 /* tapFastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713A11721F7C712006DE862 /* tapFastTests.swift */; };
 		C713A12321F7C712006DE862 /* tapFastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C713A12221F7C712006DE862 /* tapFastUITests.swift */; };
+		C713A13121F914F5006DE862 /* PORKYS_.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C713A13021F914F5006DE862 /* PORKYS_.TTF */; };
+		C713A13221F914F5006DE862 /* PORKYS_.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C713A13021F914F5006DE862 /* PORKYS_.TTF */; };
+		C713A13321F914F5006DE862 /* PORKYS_.TTF in Resources */ = {isa = PBXBuildFile; fileRef = C713A13021F914F5006DE862 /* PORKYS_.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		C713A11E21F7C712006DE862 /* tapFastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tapFastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C713A12221F7C712006DE862 /* tapFastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tapFastUITests.swift; sourceTree = "<group>"; };
 		C713A12421F7C712006DE862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C713A13021F914F5006DE862 /* PORKYS_.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = PORKYS_.TTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				C713A10621F7C711006DE862 /* Main.storyboard */,
 				C713A10921F7C712006DE862 /* Assets.xcassets */,
 				C713A10B21F7C712006DE862 /* LaunchScreen.storyboard */,
+				C713A13021F914F5006DE862 /* PORKYS_.TTF */,
 				C713A10E21F7C712006DE862 /* Info.plist */,
 			);
 			path = tapFast;
@@ -231,6 +236,7 @@
 			files = (
 				C713A10D21F7C712006DE862 /* LaunchScreen.storyboard in Resources */,
 				C713A10A21F7C712006DE862 /* Assets.xcassets in Resources */,
+				C713A13121F914F5006DE862 /* PORKYS_.TTF in Resources */,
 				C713A10821F7C711006DE862 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C713A13221F914F5006DE862 /* PORKYS_.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C713A13321F914F5006DE862 /* PORKYS_.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
