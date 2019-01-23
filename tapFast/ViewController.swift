@@ -30,8 +30,17 @@ class ViewController: UIViewController {
         
         if timeInt == 10 {
             
-            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(decreaseTimer ), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(decreaseTimer), userInfo: nil, repeats: true)
+            
+            startGameButton.isEnabled = false
+            startGameButton.alpha = 0.5
     
+        }
+        
+        if gameInt == 1 {
+            
+            scoreInt += 1
+            scoreLabel.text = String(scoreInt)
         }
         
     }
@@ -40,6 +49,17 @@ class ViewController: UIViewController {
         
         timeInt -= 1
         timeLabel.text = String(timeInt)
+        
+        startGameButton.isEnabled = true
+        startGameButton.alpha = 1.0
+        
+        gameInt = 1
+        
+        if timeInt == 0 {
+            
+            timer.invalidate()
+            gameInt = 0 
+        }
         
     }
 
