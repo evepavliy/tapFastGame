@@ -41,6 +41,17 @@ class ViewController: UIViewController {
             
             scoreInt += 1
             scoreLabel.text = String(scoreInt)
+        } else {
+            
+            timeInt = 10
+            scoreInt = 0
+            
+            timeLabel.text =  String(timeInt)
+            scoreLabel.text = String(scoreInt)
+            
+            startGameButton.setTitle("Start", for: UIControl.State.normal)
+            
+            
         }
         
     }
@@ -53,17 +64,33 @@ class ViewController: UIViewController {
         startGameButton.isEnabled = true
         startGameButton.alpha = 1.0
         
+        startGameButton.setTitle(" Tap!", for: UIControl.State.normal)
+        
         gameInt = 1
         
         if timeInt == 0 {
             
             timer.invalidate()
-            gameInt = 0 
+          
+            
+            startGameButton.isEnabled = false
+            startGameButton.alpha = 0.5
+            
+             startGameButton.setTitle(" Restart", for: UIControl.State.normal)
+            
+            Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(restart), userInfo: nil, repeats: false)
         }
         
     }
 
-   
+    @objc func restart(){
+        
+        gameInt = 0
+        
+        startGameButton.isEnabled = true
+        startGameButton.alpha = 1.0
+        
+    }
     
 }
 
